@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.positai
+
+# Office lock / temp files
+~$*
+*.tmp
+.DS_Store
