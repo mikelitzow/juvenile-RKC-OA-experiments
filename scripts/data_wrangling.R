@@ -120,7 +120,6 @@ surv_2012 <- read_csv(
 # from individual-crab "Date died" events in the wet-weight file.
 # ------------------------------------------------------------
 EXP_START_24 <- ymd("2024-08-20")
-N_INITIAL_24 <- 15L                       # 15 crabs per treatment
 
 raw_2024 <- read_csv(
   "data/2024-2025/Molting_ Wet weight_and Mortality 2024.csv",
@@ -141,11 +140,55 @@ raw_2024 <- read_csv(
 ) |>
   filter(!is.na(tub))
 
+# ------------------------------------------------------------
+# Pending data-entry corrections (2024-2025 sheet).
+#
+# These thirteen fixes apply the proposals in
+# documents/2024-2025_data_issues_for_review.docx.  The
+# collaborator has not yet confirmed them, so they may be
+# revised.  Each fix is keyed by (tub, cell) so it survives any
+# future row reordering in the source xlsx; spreadsheet row
+# numbers are in comments for cross-reference with the doc.
+# ------------------------------------------------------------
+fix_cell_24 <- function(df, tub, cell, col, value) {
+  i <- which(df$tub == as.character(tub) & df$cell == as.character(cell))
+  if (length(i) != 1L) stop("fix_cell_24: expected 1 match for tub=", tub, " cell=", cell)
+  df[[col]][i] <- value
+  df
+}
+
+raw_2024 <- raw_2024 |>
+  # --- year typos (2025 -> 2024) ---
+  fix_cell_24(3, 5,  "molt4_date",  "2024-12-26") |>   # sheet row 37
+  fix_cell_24(3, 9,  "molt4_date",  "2024-12-27") |>   # sheet row 41
+  fix_cell_24(3, 23, "molt1_date",  "2024-09-01") |>   # sheet row 47
+  fix_cell_24(8, 5,  "molt2_date",  "2024-11-04") |>   # sheet row 112
+  # --- annotated dates: strip the "molt #N" text ---
+  fix_cell_24(3, 20, "molt5_date",  "2025-03-11") |>   # sheet row 44
+  fix_cell_24(3, 21, "molt5_date",  "2025-02-18") |>   # sheet row 45
+  fix_cell_24(3, 22, "molt5_date",  "2025-03-11") |>   # sheet row 46
+  fix_cell_24(3, 5,  "molt6b_date", "2025-04-20") |>   # sheet row 37 (this is molt #7)
+  # --- mass value typed in date column; date unrecoverable ---
+  fix_cell_24(4, 22, "molt5_date",  NA) |>             # sheet row 61
+  # --- death date with "missing" annotation ---
+  fix_cell_24(7, 26, "date_died",   "2024-10-02") |>   # sheet row 110
+  # --- year-only molt date ---
+  fix_cell_24(8, 5,  "molt3_date",  NA) |>             # sheet row 112
+  # --- annotated molt date; mass intentionally left NA ---
+  fix_cell_24(1, 21, "molt6_date",  "2025-06-04")      # sheet row 15
+
+# Drop the one crab the lab flagged for removal ("Missing as of 9/3,
+# not dead, remove from analysis"): tub 5, cell 24, treatment
+# pH 7.55-+3C.  Spreadsheet row 78.
+raw_2024 <- raw_2024 |> filter(!(tub == "5" & cell == "24"))
+
 # Coerce types and parse treatment.  Dates are kept as Date (not
-# POSIXct) so day-arithmetic works cleanly.
+# POSIXct) so day-arithmetic works cleanly.  Treatment parsing
+# is done after the row drop so the resulting vector aligns.
 parse_date_col <- function(x) {
   as.Date(suppressWarnings(parse_date_time(x, c("ymd HMS", "ymd"))))
 }
+treatments_parsed_24 <- parse_treatment_24(raw_2024$treatment)
 raw_2024 <- raw_2024 |>
   mutate(
     tub  = as.integer(tub),
@@ -153,7 +196,7 @@ raw_2024 <- raw_2024 |>
     across(c(ends_with("_date"), date_died), parse_date_col),
     across(ends_with("_mass"), ~ suppressWarnings(as.numeric(.x)))
   ) |>
-  bind_cols(parse_treatment_24(raw_2024$treatment))
+  bind_cols(treatments_parsed_24)
 
 # Last observed event date defines the experiment end day.
 event_dates_24 <- raw_2024 |>
@@ -184,17 +227,24 @@ deaths_24 <- raw_2024 |>
   filter(!(is_AA(treatment_pH, treatment_temp) & day >= FLOW_FAIL_AA_DAY)) |>
   count(treatment_pH, treatment_temp, day, name = "n_died")
 
+# Per-treatment starting count.  Most treatments still have 15
+# crabs; pH 7.55-+3C drops to 14 because of the "remove from
+# analysis" exclusion above.
+n_initial_24 <- raw_2024 |>
+  count(treatment_pH, treatment_temp, name = "n_initial")
+
 surv_2024 <- raw_2024 |>
   distinct(treatment_pH, treatment_temp) |>
   cross_join(tibble(day = 0:LAST_DAY_24)) |>
   filter(!(is_AA(treatment_pH, treatment_temp) & day >= FLOW_FAIL_AA_DAY)) |>
   left_join(deaths_24, by = c("treatment_pH", "treatment_temp", "day")) |>
+  left_join(n_initial_24, by = c("treatment_pH", "treatment_temp")) |>
   mutate(n_died = replace_na(n_died, 0L)) |>
   group_by(treatment_pH, treatment_temp) |>
   arrange(day, .by_group = TRUE) |>
-  mutate(n_alive = N_INITIAL_24 - cumsum(n_died)) |>
+  mutate(n_alive = first(n_initial) - cumsum(n_died)) |>
   ungroup() |>
-  mutate(experiment = "2024-2025", n_initial = N_INITIAL_24) |>
+  mutate(experiment = "2024-2025") |>
   select(experiment, treatment_pH, treatment_temp, day, n_alive, n_initial)
 
 # ------------------------------------------------------------
@@ -213,11 +263,13 @@ survival_combined <- bind_rows(surv_2010, surv_2012, surv_2024) |>
 # 2a. 2010-2011 (Long et al. 2013)
 # Already in long format.  Columns 1-7 hold the data; the rest
 # are crab-indicator dummies used in the original R model.
-# Note: the "Stage" column labels 1st..5th refer to post-molt
-# measurements (RKC molted up to 5 times; no initial mass row).
+# Stage labels: "1st" is the INITIAL pre-experiment measurement
+# (molt_num = 0); "2nd"-"5th" are post-molt 1-4.  Verified by
+# reproducing the paper's wet-mass coefficients only when the
+# "1st" rows are excluded from the growth fit.
 # ------------------------------------------------------------
-stage_to_num <- c("1st" = 1L, "2nd" = 2L, "3rd" = 3L,
-                  "4th" = 4L, "5th" = 5L, "6th" = 6L)
+stage_to_num <- c("1st" = 0L, "2nd" = 1L, "3rd" = 2L,
+                  "4th" = 3L, "5th" = 4L)
 
 wm_2010 <- read_csv(
   "data/2010-2011/Juv wet mass for R 2010-2011.csv",
