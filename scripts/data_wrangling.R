@@ -141,14 +141,15 @@ raw_2024 <- read_csv(
   filter(!is.na(tub))
 
 # ------------------------------------------------------------
-# Pending data-entry corrections (2024-2025 sheet).
+# Data-entry corrections (2024-2025 sheet), confirmed by Chris
+# Long (WCL) via track-changes in
+# documents/2024-2025_data_issues_for_review.docx (commit
+# c6b89ce, "Error response from WCL").
 #
-# These thirteen fixes apply the proposals in
-# documents/2024-2025_data_issues_for_review.docx.  The
-# collaborator has not yet confirmed them, so they may be
-# revised.  Each fix is keyed by (tub, cell) so it survives any
-# future row reordering in the source xlsx; spreadsheet row
-# numbers are in comments for cross-reference with the doc.
+# Items 1-8, 10, 12 were confirmed as proposed.  Items 9, 11, 13
+# were revised based on WCL's notes.  Each fix is keyed by
+# (tub, cell) so it survives row reordering in the source xlsx;
+# spreadsheet row numbers are in comments for cross-reference.
 # ------------------------------------------------------------
 fix_cell_24 <- function(df, tub, cell, col, value) {
   i <- which(df$tub == as.character(tub) & df$cell == as.character(cell))
@@ -158,29 +159,43 @@ fix_cell_24 <- function(df, tub, cell, col, value) {
 }
 
 raw_2024 <- raw_2024 |>
-  # --- year typos (2025 -> 2024) ---
+  # --- items 1-4: year typos (2025 -> 2024) ---
   fix_cell_24(3, 5,  "molt4_date",  "2024-12-26") |>   # sheet row 37
   fix_cell_24(3, 9,  "molt4_date",  "2024-12-27") |>   # sheet row 41
   fix_cell_24(3, 23, "molt1_date",  "2024-09-01") |>   # sheet row 47
   fix_cell_24(8, 5,  "molt2_date",  "2024-11-04") |>   # sheet row 112
-  # --- annotated dates: strip the "molt #N" text ---
+  # --- items 5-8: annotated dates; strip "molt #N" text.  molt6b
+  #     is reinterpreted as molt 7 per WCL's column-rename note. ---
   fix_cell_24(3, 20, "molt5_date",  "2025-03-11") |>   # sheet row 44
   fix_cell_24(3, 21, "molt5_date",  "2025-02-18") |>   # sheet row 45
   fix_cell_24(3, 22, "molt5_date",  "2025-03-11") |>   # sheet row 46
-  fix_cell_24(3, 5,  "molt6b_date", "2025-04-20") |>   # sheet row 37 (this is molt #7)
-  # --- mass value typed in date column; date unrecoverable ---
-  fix_cell_24(4, 22, "molt5_date",  NA) |>             # sheet row 61
-  # --- death date with "missing" annotation ---
-  fix_cell_24(7, 26, "date_died",   "2024-10-02") |>   # sheet row 110
-  # --- year-only molt date ---
+  fix_cell_24(3, 5,  "molt6b_date", "2025-04-20") |>   # sheet row 37 (molt #7)
+  # --- item 9 (revised): WCL says the "date_died" cell in row 61
+  #     is actually the 5th-molt date and the entries are shifted
+  #     one column to the left.  Crab survived; date_died = NA. ---
+  fix_cell_24(4, 22, "molt5_date",  "2025-06-10") |>   # sheet row 61
+  fix_cell_24(4, 22, "molt5_mass",  "0.0308")     |>   # sheet row 61
+  fix_cell_24(4, 22, "date_died",   NA)           |>   # sheet row 61
+  # --- item 12 confirmed: row 112 had no 3rd molt (X / NA) ---
   fix_cell_24(8, 5,  "molt3_date",  NA) |>             # sheet row 112
-  # --- annotated molt date; mass intentionally left NA ---
-  fix_cell_24(1, 21, "molt6_date",  "2025-06-04")      # sheet row 15
+  # --- item 13 (revised): the molt6_date annotation on row 15 is
+  #     a redundant note about the same 6/4 event already in
+  #     molt5_date; clear it.  WCL also reports that row 16's
+  #     date_died (2025-06-08) was misentered and belongs to
+  #     row 15 (cell 21), which actually died. ---
+  fix_cell_24(1, 21, "molt6_date",  NA) |>             # sheet row 15
+  fix_cell_24(1, 21, "date_died",   "2025-06-08") |>   # sheet row 15
+  fix_cell_24(1, 22, "date_died",   NA)                # sheet row 16
 
-# Drop the one crab the lab flagged for removal ("Missing as of 9/3,
-# not dead, remove from analysis"): tub 5, cell 24, treatment
-# pH 7.55-+3C.  Spreadsheet row 78.
-raw_2024 <- raw_2024 |> filter(!(tub == "5" & cell == "24"))
+# --- items 10 & 11: drop crabs WCL flagged "remove from analysis" ---
+#   Row 78  (tub 5, cell 24, pH 7.55-+3C): "Missing as of 9/3,
+#                                          not dead, remove from analysis"
+#   Row 110 (tub 7, cell 26, A-A): the "10/2/24 missing" entry
+#           means "missing as of 10/2/24"; the crab was not dead
+#           (treat like item 10 per WCL's note).
+raw_2024 <- raw_2024 |>
+  filter(!(tub == "5" & cell == "24"),
+         !(tub == "7" & cell == "26"))
 
 # Coerce types and parse treatment.  Dates are kept as Date (not
 # POSIXct) so day-arithmetic works cleanly.  Treatment parsing
@@ -373,8 +388,10 @@ wm_2012 <- bind_rows(
 
 # ------------------------------------------------------------
 # 2c. 2024-2025 (unpublished)
-# Wide format with initial wet mass + post-molt masses 1-6.
-# raw_2024 was already read above for the survival derivation.
+# Wide format with initial wet mass + post-molt masses 1-7
+# (the source column originally labelled "molt6b" is actually
+# the 7th molt, per WCL).  raw_2024 was already read above
+# for the survival derivation.
 # ------------------------------------------------------------
 wm_2024 <- bind_rows(
   raw_2024 |>
@@ -425,7 +442,14 @@ wm_2024 <- bind_rows(
                               sprintf("c%02d", cell), sep = "_"),
               molt_num = 6L,
               date = as_date(molt6_date),
-              wet_mass_g = molt6_mass)
+              wet_mass_g = molt6_mass),
+  raw_2024 |>
+    transmute(experiment = "2024-2025", treatment_pH, treatment_temp,
+              crab_id = paste("2024", sprintf("t%d", tub),
+                              sprintf("c%02d", cell), sep = "_"),
+              molt_num = 7L,
+              date = as_date(molt6b_date),
+              wet_mass_g = molt6b_mass)
 ) |>
   filter(!is.na(wet_mass_g)) |>
   mutate(exp_day = as.integer(date - EXP_START_24)) |>
@@ -440,10 +464,122 @@ wet_mass_combined <- bind_rows(wm_2010, wm_2012, wm_2024) |>
 
 
 # ============================================================
-# 3.  Write outputs and report
+# 3.  TREATMENT CONDITIONS (realized mean pH and temperature)
 # ============================================================
-write_csv(survival_combined, "data/combined/survival_combined.csv")
-write_csv(wet_mass_combined, "data/combined/wet_mass_combined.csv")
+
+# ------------------------------------------------------------
+# 3a. 2010-2011 — no daily pH/temp file is present in
+# data/2010-2011/.  Use the means and SDs reported in Long
+# et al. 2013 (Table 1 for pH, abstract/results for temperature).
+# ------------------------------------------------------------
+cond_2010 <- tibble(
+  experiment     = "2010-2011",
+  treatment_pH   = c("ambient", "pH 7.8", "pH 7.5"),
+  treatment_temp = "ambient",
+  mean_pH        = c(8.040, 7.802, 7.503),
+  sd_pH          = c(0.040, 0.025, 0.040),
+  mean_temp_C    = 9.1,
+  sd_temp_C      = 2.0,
+  source         = "Long et al. 2013 Table 1 / Results"
+)
+
+# ------------------------------------------------------------
+# 3b. 2012-2013 — daily pH/temp records per tub.
+# ------------------------------------------------------------
+cond_2012 <- read_csv(
+  "data/2012-2013/33529_RACE_2012-2013_daily pH temp.csv",
+  show_col_types = FALSE
+) |>
+  mutate(treatment_pH   = std_pH(`Treatment pH`),
+         treatment_temp = std_temp(`Treatment temp C`)) |>
+  group_by(treatment_pH, treatment_temp) |>
+  summarise(mean_pH     = mean(pH,       na.rm = TRUE),
+            sd_pH       = sd(pH,         na.rm = TRUE),
+            mean_temp_C = mean(`Temp C`, na.rm = TRUE),
+            sd_temp_C   = sd(`Temp C`,   na.rm = TRUE),
+            .groups     = "drop") |>
+  mutate(experiment = "2012-2013",
+         source     = "33529_RACE_2012-2013_daily pH temp.xlsx")
+
+# ------------------------------------------------------------
+# 3c. 2024-2025 — wide-format daily measurements with three
+# title rows, a tub-label row, and a column-header row.  Tub
+# identity is fixed (one treatment per tub).
+# ------------------------------------------------------------
+tub_map_24 <- tibble(
+  tub            = 1:8,
+  treatment_pH   = c("pH 7.55", "ambient", "pH 7.65", "pH 7.65",
+                     "pH 7.55", "pH 7.85", "ambient", "pH 7.85"),
+  treatment_temp = c("ambient", "+3C", "+3C", "ambient",
+                     "+3C",     "+3C", "ambient", "ambient")
+)
+
+cond_2024 <- read_csv(
+  "data/2024-2025/NEW Juv RKC 2024 pH and Temp.csv",
+  skip      = 6,
+  col_names = c("date",
+                "pH_t1","temp_t1","pH_t2","temp_t2","pH_t3","temp_t3",
+                "pH_t4","temp_t4","pH_t5","temp_t5","pH_t6","temp_t6",
+                "pH_t7","temp_t7","pH_t8","temp_t8",
+                "notes"),
+  col_types = cols(.default = col_character()),
+  show_col_types = FALSE
+) |>
+  select(-notes, -date) |>
+  pivot_longer(everything(),
+               names_to  = c(".value", "tub"),
+               names_pattern = "(pH|temp)_t(\\d)") |>
+  mutate(tub  = as.integer(tub),
+         pH   = suppressWarnings(as.numeric(pH)),
+         temp = suppressWarnings(as.numeric(temp))) |>
+  filter(!is.na(pH) | !is.na(temp)) |>
+  left_join(tub_map_24, by = "tub") |>
+  group_by(treatment_pH, treatment_temp) |>
+  summarise(mean_pH     = mean(pH,   na.rm = TRUE),
+            sd_pH       = sd(pH,     na.rm = TRUE),
+            mean_temp_C = mean(temp, na.rm = TRUE),
+            sd_temp_C   = sd(temp,   na.rm = TRUE),
+            .groups     = "drop") |>
+  mutate(experiment = "2024-2025",
+         source     = "NEW Juv RKC 2024 pH and Temp.xlsx")
+
+# ------------------------------------------------------------
+# Combined treatment conditions
+# ------------------------------------------------------------
+treatment_conditions <- bind_rows(cond_2010, cond_2012, cond_2024) |>
+  select(experiment, treatment_pH, treatment_temp,
+         mean_pH, sd_pH, mean_temp_C, sd_temp_C, source) |>
+  arrange(experiment, treatment_pH, treatment_temp)
+
+
+# ============================================================
+# 4.  Join conditions onto response data
+# ============================================================
+survival_combined <- survival_combined |>
+  left_join(treatment_conditions |>
+              select(experiment, treatment_pH, treatment_temp,
+                     mean_pH, mean_temp_C),
+            by = c("experiment", "treatment_pH", "treatment_temp"))
+
+wet_mass_combined <- wet_mass_combined |>
+  left_join(treatment_conditions |>
+              select(experiment, treatment_pH, treatment_temp,
+                     mean_pH, mean_temp_C),
+            by = c("experiment", "treatment_pH", "treatment_temp"))
+
+
+# ============================================================
+# 5.  Write outputs and report
+# ============================================================
+write_csv(survival_combined,    "data/combined/survival_combined.csv")
+write_csv(wet_mass_combined,    "data/combined/wet_mass_combined.csv")
+write_csv(treatment_conditions, "data/combined/treatment_conditions.csv")
+
+message("\n--- Treatment conditions ---")
+print(treatment_conditions |>
+        mutate(across(c(mean_pH, sd_pH, mean_temp_C, sd_temp_C),
+                      ~ round(.x, 3))),
+      n = Inf)
 
 message("\n--- Survival ---")
 print(
