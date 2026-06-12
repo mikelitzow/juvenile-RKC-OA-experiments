@@ -1,0 +1,1105 @@
+Experimental Day,Treatment pH,Treatment temp C,Number alive,Initial number
+1,ambient,ambient,30,30
+2,ambient,ambient,30,30
+3,ambient,ambient,30,30
+4,ambient,ambient,30,30
+5,ambient,ambient,30,30
+6,ambient,ambient,30,30
+7,ambient,ambient,30,30
+8,ambient,ambient,30,30
+9,ambient,ambient,30,30
+10,ambient,ambient,30,30
+11,ambient,ambient,30,30
+12,ambient,ambient,30,30
+13,ambient,ambient,30,30
+14,ambient,ambient,30,30
+15,ambient,ambient,30,30
+16,ambient,ambient,30,30
+17,ambient,ambient,30,30
+18,ambient,ambient,30,30
+19,ambient,ambient,30,30
+20,ambient,ambient,30,30
+21,ambient,ambient,30,30
+22,ambient,ambient,30,30
+23,ambient,ambient,30,30
+24,ambient,ambient,30,30
+25,ambient,ambient,30,30
+26,ambient,ambient,30,30
+27,ambient,ambient,29,30
+28,ambient,ambient,29,30
+29,ambient,ambient,29,30
+30,ambient,ambient,29,30
+31,ambient,ambient,29,30
+32,ambient,ambient,29,30
+33,ambient,ambient,29,30
+34,ambient,ambient,29,30
+35,ambient,ambient,29,30
+36,ambient,ambient,29,30
+37,ambient,ambient,29,30
+38,ambient,ambient,29,30
+39,ambient,ambient,29,30
+40,ambient,ambient,29,30
+41,ambient,ambient,29,30
+42,ambient,ambient,29,30
+43,ambient,ambient,29,30
+44,ambient,ambient,29,30
+45,ambient,ambient,29,30
+46,ambient,ambient,29,30
+47,ambient,ambient,29,30
+48,ambient,ambient,29,30
+49,ambient,ambient,29,30
+50,ambient,ambient,29,30
+51,ambient,ambient,29,30
+52,ambient,ambient,29,30
+53,ambient,ambient,28,30
+54,ambient,ambient,28,30
+55,ambient,ambient,28,30
+56,ambient,ambient,28,30
+57,ambient,ambient,28,30
+58,ambient,ambient,28,30
+59,ambient,ambient,28,30
+60,ambient,ambient,28,30
+61,ambient,ambient,27,30
+62,ambient,ambient,27,30
+63,ambient,ambient,27,30
+64,ambient,ambient,26,30
+65,ambient,ambient,26,30
+66,ambient,ambient,26,30
+67,ambient,ambient,26,30
+68,ambient,ambient,26,30
+69,ambient,ambient,26,30
+70,ambient,ambient,26,30
+71,ambient,ambient,25,30
+72,ambient,ambient,24,30
+73,ambient,ambient,24,30
+74,ambient,ambient,24,30
+75,ambient,ambient,24,30
+76,ambient,ambient,24,30
+77,ambient,ambient,24,30
+78,ambient,ambient,24,30
+79,ambient,ambient,24,30
+80,ambient,ambient,24,30
+81,ambient,ambient,23,30
+82,ambient,ambient,23,30
+83,ambient,ambient,23,30
+84,ambient,ambient,23,30
+85,ambient,ambient,23,30
+86,ambient,ambient,23,30
+87,ambient,ambient,23,30
+88,ambient,ambient,23,30
+89,ambient,ambient,23,30
+90,ambient,ambient,23,30
+91,ambient,ambient,23,30
+92,ambient,ambient,23,30
+93,ambient,ambient,23,30
+94,ambient,ambient,23,30
+95,ambient,ambient,21,30
+96,ambient,ambient,21,30
+97,ambient,ambient,20,30
+98,ambient,ambient,20,30
+99,ambient,ambient,20,30
+100,ambient,ambient,20,30
+101,ambient,ambient,19,30
+102,ambient,ambient,19,30
+103,ambient,ambient,19,30
+104,ambient,ambient,19,30
+105,ambient,ambient,19,30
+106,ambient,ambient,19,30
+107,ambient,ambient,18,30
+108,ambient,ambient,18,30
+109,ambient,ambient,18,30
+110,ambient,ambient,18,30
+111,ambient,ambient,18,30
+112,ambient,ambient,18,30
+113,ambient,ambient,18,30
+114,ambient,ambient,18,30
+115,ambient,ambient,18,30
+116,ambient,ambient,18,30
+117,ambient,ambient,18,30
+118,ambient,ambient,18,30
+119,ambient,ambient,18,30
+120,ambient,ambient,18,30
+121,ambient,ambient,18,30
+122,ambient,ambient,18,30
+123,ambient,ambient,18,30
+124,ambient,ambient,18,30
+125,ambient,ambient,18,30
+126,ambient,ambient,18,30
+127,ambient,ambient,18,30
+128,ambient,ambient,18,30
+129,ambient,ambient,18,30
+130,ambient,ambient,18,30
+131,ambient,ambient,18,30
+132,ambient,ambient,18,30
+133,ambient,ambient,17,30
+134,ambient,ambient,17,30
+135,ambient,ambient,17,30
+136,ambient,ambient,17,30
+137,ambient,ambient,17,30
+138,ambient,ambient,17,30
+139,ambient,ambient,17,30
+140,ambient,ambient,17,30
+141,ambient,ambient,17,30
+142,ambient,ambient,17,30
+143,ambient,ambient,17,30
+144,ambient,ambient,17,30
+145,ambient,ambient,17,30
+146,ambient,ambient,16,30
+147,ambient,ambient,16,30
+148,ambient,ambient,16,30
+149,ambient,ambient,16,30
+150,ambient,ambient,16,30
+151,ambient,ambient,16,30
+152,ambient,ambient,16,30
+153,ambient,ambient,16,30
+154,ambient,ambient,16,30
+155,ambient,ambient,16,30
+156,ambient,ambient,16,30
+157,ambient,ambient,16,30
+158,ambient,ambient,16,30
+159,ambient,ambient,16,30
+160,ambient,ambient,16,30
+161,ambient,ambient,16,30
+162,ambient,ambient,16,30
+163,ambient,ambient,16,30
+164,ambient,ambient,16,30
+165,ambient,ambient,16,30
+166,ambient,ambient,16,30
+167,ambient,ambient,16,30
+168,ambient,ambient,16,30
+169,ambient,ambient,16,30
+170,ambient,ambient,16,30
+171,ambient,ambient,16,30
+172,ambient,ambient,16,30
+173,ambient,ambient,16,30
+174,ambient,ambient,16,30
+175,ambient,ambient,16,30
+176,ambient,ambient,16,30
+177,ambient,ambient,16,30
+178,ambient,ambient,16,30
+179,ambient,ambient,16,30
+180,ambient,ambient,16,30
+181,ambient,ambient,16,30
+182,ambient,ambient,16,30
+183,ambient,ambient,16,30
+184,ambient,ambient,16,30
+1,ambient,ambient +4,28,28
+2,ambient,ambient +4,28,28
+3,ambient,ambient +4,28,28
+4,ambient,ambient +4,28,28
+5,ambient,ambient +4,28,28
+6,ambient,ambient +4,28,28
+7,ambient,ambient +4,28,28
+8,ambient,ambient +4,28,28
+9,ambient,ambient +4,28,28
+10,ambient,ambient +4,28,28
+11,ambient,ambient +4,28,28
+12,ambient,ambient +4,28,28
+13,ambient,ambient +4,28,28
+14,ambient,ambient +4,28,28
+15,ambient,ambient +4,28,28
+16,ambient,ambient +4,28,28
+17,ambient,ambient +4,28,28
+18,ambient,ambient +4,28,28
+19,ambient,ambient +4,28,28
+20,ambient,ambient +4,28,28
+21,ambient,ambient +4,28,28
+22,ambient,ambient +4,28,28
+23,ambient,ambient +4,28,28
+24,ambient,ambient +4,28,28
+25,ambient,ambient +4,28,28
+26,ambient,ambient +4,28,28
+27,ambient,ambient +4,28,28
+28,ambient,ambient +4,28,28
+29,ambient,ambient +4,28,28
+30,ambient,ambient +4,28,28
+31,ambient,ambient +4,28,28
+32,ambient,ambient +4,28,28
+33,ambient,ambient +4,28,28
+34,ambient,ambient +4,28,28
+35,ambient,ambient +4,28,28
+36,ambient,ambient +4,28,28
+37,ambient,ambient +4,28,28
+38,ambient,ambient +4,28,28
+39,ambient,ambient +4,28,28
+40,ambient,ambient +4,28,28
+41,ambient,ambient +4,28,28
+42,ambient,ambient +4,28,28
+43,ambient,ambient +4,28,28
+44,ambient,ambient +4,28,28
+45,ambient,ambient +4,28,28
+46,ambient,ambient +4,28,28
+47,ambient,ambient +4,28,28
+48,ambient,ambient +4,28,28
+49,ambient,ambient +4,28,28
+50,ambient,ambient +4,28,28
+51,ambient,ambient +4,27,28
+52,ambient,ambient +4,25,28
+53,ambient,ambient +4,24,28
+54,ambient,ambient +4,24,28
+55,ambient,ambient +4,24,28
+56,ambient,ambient +4,24,28
+57,ambient,ambient +4,24,28
+58,ambient,ambient +4,24,28
+59,ambient,ambient +4,24,28
+60,ambient,ambient +4,24,28
+61,ambient,ambient +4,24,28
+62,ambient,ambient +4,23,28
+63,ambient,ambient +4,23,28
+64,ambient,ambient +4,23,28
+65,ambient,ambient +4,23,28
+66,ambient,ambient +4,23,28
+67,ambient,ambient +4,23,28
+68,ambient,ambient +4,23,28
+69,ambient,ambient +4,23,28
+70,ambient,ambient +4,23,28
+71,ambient,ambient +4,23,28
+72,ambient,ambient +4,23,28
+73,ambient,ambient +4,23,28
+74,ambient,ambient +4,23,28
+75,ambient,ambient +4,23,28
+76,ambient,ambient +4,22,28
+77,ambient,ambient +4,22,28
+78,ambient,ambient +4,22,28
+79,ambient,ambient +4,21,28
+80,ambient,ambient +4,21,28
+81,ambient,ambient +4,21,28
+82,ambient,ambient +4,21,28
+83,ambient,ambient +4,20,28
+84,ambient,ambient +4,20,28
+85,ambient,ambient +4,20,28
+86,ambient,ambient +4,20,28
+87,ambient,ambient +4,20,28
+88,ambient,ambient +4,20,28
+89,ambient,ambient +4,20,28
+90,ambient,ambient +4,20,28
+91,ambient,ambient +4,20,28
+92,ambient,ambient +4,20,28
+93,ambient,ambient +4,20,28
+94,ambient,ambient +4,20,28
+95,ambient,ambient +4,19,28
+96,ambient,ambient +4,19,28
+97,ambient,ambient +4,19,28
+98,ambient,ambient +4,19,28
+99,ambient,ambient +4,19,28
+100,ambient,ambient +4,19,28
+101,ambient,ambient +4,18,28
+102,ambient,ambient +4,18,28
+103,ambient,ambient +4,18,28
+104,ambient,ambient +4,18,28
+105,ambient,ambient +4,17,28
+106,ambient,ambient +4,16,28
+107,ambient,ambient +4,16,28
+108,ambient,ambient +4,16,28
+109,ambient,ambient +4,16,28
+110,ambient,ambient +4,16,28
+111,ambient,ambient +4,15,28
+112,ambient,ambient +4,15,28
+113,ambient,ambient +4,13,28
+114,ambient,ambient +4,13,28
+115,ambient,ambient +4,13,28
+116,ambient,ambient +4,13,28
+117,ambient,ambient +4,13,28
+118,ambient,ambient +4,13,28
+119,ambient,ambient +4,13,28
+120,ambient,ambient +4,13,28
+121,ambient,ambient +4,13,28
+122,ambient,ambient +4,13,28
+123,ambient,ambient +4,13,28
+124,ambient,ambient +4,13,28
+125,ambient,ambient +4,13,28
+126,ambient,ambient +4,13,28
+127,ambient,ambient +4,13,28
+128,ambient,ambient +4,13,28
+129,ambient,ambient +4,12,28
+130,ambient,ambient +4,12,28
+131,ambient,ambient +4,12,28
+132,ambient,ambient +4,12,28
+133,ambient,ambient +4,12,28
+134,ambient,ambient +4,11,28
+135,ambient,ambient +4,11,28
+136,ambient,ambient +4,11,28
+137,ambient,ambient +4,11,28
+138,ambient,ambient +4,11,28
+139,ambient,ambient +4,11,28
+140,ambient,ambient +4,11,28
+141,ambient,ambient +4,10,28
+142,ambient,ambient +4,10,28
+143,ambient,ambient +4,10,28
+144,ambient,ambient +4,10,28
+145,ambient,ambient +4,10,28
+146,ambient,ambient +4,10,28
+147,ambient,ambient +4,10,28
+148,ambient,ambient +4,10,28
+149,ambient,ambient +4,10,28
+150,ambient,ambient +4,10,28
+151,ambient,ambient +4,10,28
+152,ambient,ambient +4,9,28
+153,ambient,ambient +4,9,28
+154,ambient,ambient +4,9,28
+155,ambient,ambient +4,9,28
+156,ambient,ambient +4,9,28
+157,ambient,ambient +4,9,28
+158,ambient,ambient +4,9,28
+159,ambient,ambient +4,9,28
+160,ambient,ambient +4,9,28
+161,ambient,ambient +4,9,28
+162,ambient,ambient +4,9,28
+163,ambient,ambient +4,9,28
+164,ambient,ambient +4,9,28
+165,ambient,ambient +4,8,28
+166,ambient,ambient +4,8,28
+167,ambient,ambient +4,8,28
+168,ambient,ambient +4,8,28
+169,ambient,ambient +4,8,28
+170,ambient,ambient +4,8,28
+171,ambient,ambient +4,8,28
+172,ambient,ambient +4,8,28
+173,ambient,ambient +4,8,28
+174,ambient,ambient +4,8,28
+175,ambient,ambient +4,8,28
+176,ambient,ambient +4,8,28
+177,ambient,ambient +4,8,28
+178,ambient,ambient +4,8,28
+179,ambient,ambient +4,8,28
+180,ambient,ambient +4,8,28
+181,ambient,ambient +4,8,28
+182,ambient,ambient +4,8,28
+183,ambient,ambient +4,8,28
+184,ambient,ambient +4,8,28
+1,ambient,ambient +2,30,30
+2,ambient,ambient +2,30,30
+3,ambient,ambient +2,30,30
+4,ambient,ambient +2,30,30
+5,ambient,ambient +2,30,30
+6,ambient,ambient +2,30,30
+7,ambient,ambient +2,30,30
+8,ambient,ambient +2,30,30
+9,ambient,ambient +2,30,30
+10,ambient,ambient +2,30,30
+11,ambient,ambient +2,30,30
+12,ambient,ambient +2,30,30
+13,ambient,ambient +2,30,30
+14,ambient,ambient +2,30,30
+15,ambient,ambient +2,30,30
+16,ambient,ambient +2,30,30
+17,ambient,ambient +2,30,30
+18,ambient,ambient +2,30,30
+19,ambient,ambient +2,30,30
+20,ambient,ambient +2,30,30
+21,ambient,ambient +2,30,30
+22,ambient,ambient +2,30,30
+23,ambient,ambient +2,30,30
+24,ambient,ambient +2,30,30
+25,ambient,ambient +2,30,30
+26,ambient,ambient +2,30,30
+27,ambient,ambient +2,30,30
+28,ambient,ambient +2,30,30
+29,ambient,ambient +2,30,30
+30,ambient,ambient +2,30,30
+31,ambient,ambient +2,29,30
+32,ambient,ambient +2,29,30
+33,ambient,ambient +2,29,30
+34,ambient,ambient +2,29,30
+35,ambient,ambient +2,29,30
+36,ambient,ambient +2,29,30
+37,ambient,ambient +2,29,30
+38,ambient,ambient +2,29,30
+39,ambient,ambient +2,29,30
+40,ambient,ambient +2,29,30
+41,ambient,ambient +2,29,30
+42,ambient,ambient +2,29,30
+43,ambient,ambient +2,29,30
+44,ambient,ambient +2,29,30
+45,ambient,ambient +2,29,30
+46,ambient,ambient +2,29,30
+47,ambient,ambient +2,29,30
+48,ambient,ambient +2,29,30
+49,ambient,ambient +2,29,30
+50,ambient,ambient +2,29,30
+51,ambient,ambient +2,29,30
+52,ambient,ambient +2,29,30
+53,ambient,ambient +2,29,30
+54,ambient,ambient +2,29,30
+55,ambient,ambient +2,27,30
+56,ambient,ambient +2,27,30
+57,ambient,ambient +2,27,30
+58,ambient,ambient +2,26,30
+59,ambient,ambient +2,26,30
+60,ambient,ambient +2,25,30
+61,ambient,ambient +2,24,30
+62,ambient,ambient +2,24,30
+63,ambient,ambient +2,22,30
+64,ambient,ambient +2,21,30
+65,ambient,ambient +2,21,30
+66,ambient,ambient +2,20,30
+67,ambient,ambient +2,19,30
+68,ambient,ambient +2,19,30
+69,ambient,ambient +2,19,30
+70,ambient,ambient +2,19,30
+71,ambient,ambient +2,19,30
+72,ambient,ambient +2,19,30
+73,ambient,ambient +2,19,30
+74,ambient,ambient +2,18,30
+75,ambient,ambient +2,18,30
+76,ambient,ambient +2,18,30
+77,ambient,ambient +2,18,30
+78,ambient,ambient +2,18,30
+79,ambient,ambient +2,18,30
+80,ambient,ambient +2,18,30
+81,ambient,ambient +2,18,30
+82,ambient,ambient +2,17,30
+83,ambient,ambient +2,17,30
+84,ambient,ambient +2,17,30
+85,ambient,ambient +2,17,30
+86,ambient,ambient +2,17,30
+87,ambient,ambient +2,17,30
+88,ambient,ambient +2,17,30
+89,ambient,ambient +2,17,30
+90,ambient,ambient +2,15,30
+91,ambient,ambient +2,15,30
+92,ambient,ambient +2,15,30
+93,ambient,ambient +2,14,30
+94,ambient,ambient +2,14,30
+95,ambient,ambient +2,14,30
+96,ambient,ambient +2,14,30
+97,ambient,ambient +2,14,30
+98,ambient,ambient +2,14,30
+99,ambient,ambient +2,14,30
+100,ambient,ambient +2,14,30
+101,ambient,ambient +2,13,30
+102,ambient,ambient +2,13,30
+103,ambient,ambient +2,13,30
+104,ambient,ambient +2,13,30
+105,ambient,ambient +2,12,30
+106,ambient,ambient +2,12,30
+107,ambient,ambient +2,12,30
+108,ambient,ambient +2,12,30
+109,ambient,ambient +2,12,30
+110,ambient,ambient +2,12,30
+111,ambient,ambient +2,12,30
+112,ambient,ambient +2,12,30
+113,ambient,ambient +2,12,30
+114,ambient,ambient +2,12,30
+115,ambient,ambient +2,12,30
+116,ambient,ambient +2,12,30
+117,ambient,ambient +2,12,30
+118,ambient,ambient +2,12,30
+119,ambient,ambient +2,12,30
+120,ambient,ambient +2,12,30
+121,ambient,ambient +2,12,30
+122,ambient,ambient +2,12,30
+123,ambient,ambient +2,12,30
+124,ambient,ambient +2,11,30
+125,ambient,ambient +2,11,30
+126,ambient,ambient +2,11,30
+127,ambient,ambient +2,11,30
+128,ambient,ambient +2,10,30
+129,ambient,ambient +2,10,30
+130,ambient,ambient +2,10,30
+131,ambient,ambient +2,10,30
+132,ambient,ambient +2,10,30
+133,ambient,ambient +2,10,30
+134,ambient,ambient +2,10,30
+135,ambient,ambient +2,9,30
+136,ambient,ambient +2,9,30
+137,ambient,ambient +2,9,30
+138,ambient,ambient +2,9,30
+139,ambient,ambient +2,8,30
+140,ambient,ambient +2,8,30
+141,ambient,ambient +2,8,30
+142,ambient,ambient +2,7,30
+143,ambient,ambient +2,7,30
+144,ambient,ambient +2,7,30
+145,ambient,ambient +2,7,30
+146,ambient,ambient +2,7,30
+147,ambient,ambient +2,7,30
+148,ambient,ambient +2,7,30
+149,ambient,ambient +2,7,30
+150,ambient,ambient +2,7,30
+151,ambient,ambient +2,7,30
+152,ambient,ambient +2,7,30
+153,ambient,ambient +2,7,30
+154,ambient,ambient +2,7,30
+155,ambient,ambient +2,7,30
+156,ambient,ambient +2,7,30
+157,ambient,ambient +2,7,30
+158,ambient,ambient +2,7,30
+159,ambient,ambient +2,7,30
+160,ambient,ambient +2,7,30
+161,ambient,ambient +2,7,30
+162,ambient,ambient +2,6,30
+163,ambient,ambient +2,6,30
+164,ambient,ambient +2,6,30
+165,ambient,ambient +2,6,30
+166,ambient,ambient +2,6,30
+167,ambient,ambient +2,6,30
+168,ambient,ambient +2,6,30
+169,ambient,ambient +2,6,30
+170,ambient,ambient +2,6,30
+171,ambient,ambient +2,6,30
+172,ambient,ambient +2,6,30
+173,ambient,ambient +2,6,30
+174,ambient,ambient +2,6,30
+175,ambient,ambient +2,6,30
+176,ambient,ambient +2,6,30
+177,ambient,ambient +2,6,30
+178,ambient,ambient +2,6,30
+179,ambient,ambient +2,6,30
+180,ambient,ambient +2,6,30
+181,ambient,ambient +2,6,30
+182,ambient,ambient +2,6,30
+183,ambient,ambient +2,6,30
+184,ambient,ambient +2,6,30
+1,pH 7.8,ambient,30,30
+2,pH 7.8,ambient,30,30
+3,pH 7.8,ambient,30,30
+4,pH 7.8,ambient,30,30
+5,pH 7.8,ambient,30,30
+6,pH 7.8,ambient,30,30
+7,pH 7.8,ambient,30,30
+8,pH 7.8,ambient,30,30
+9,pH 7.8,ambient,30,30
+10,pH 7.8,ambient,30,30
+11,pH 7.8,ambient,30,30
+12,pH 7.8,ambient,30,30
+13,pH 7.8,ambient,30,30
+14,pH 7.8,ambient,30,30
+15,pH 7.8,ambient,30,30
+16,pH 7.8,ambient,30,30
+17,pH 7.8,ambient,30,30
+18,pH 7.8,ambient,30,30
+19,pH 7.8,ambient,30,30
+20,pH 7.8,ambient,30,30
+21,pH 7.8,ambient,30,30
+22,pH 7.8,ambient,30,30
+23,pH 7.8,ambient,30,30
+24,pH 7.8,ambient,30,30
+25,pH 7.8,ambient,30,30
+26,pH 7.8,ambient,30,30
+27,pH 7.8,ambient,30,30
+28,pH 7.8,ambient,30,30
+29,pH 7.8,ambient,30,30
+30,pH 7.8,ambient,30,30
+31,pH 7.8,ambient,30,30
+32,pH 7.8,ambient,30,30
+33,pH 7.8,ambient,30,30
+34,pH 7.8,ambient,30,30
+35,pH 7.8,ambient,30,30
+36,pH 7.8,ambient,30,30
+37,pH 7.8,ambient,30,30
+38,pH 7.8,ambient,30,30
+39,pH 7.8,ambient,30,30
+40,pH 7.8,ambient,30,30
+41,pH 7.8,ambient,30,30
+42,pH 7.8,ambient,30,30
+43,pH 7.8,ambient,30,30
+44,pH 7.8,ambient,30,30
+45,pH 7.8,ambient,30,30
+46,pH 7.8,ambient,30,30
+47,pH 7.8,ambient,30,30
+48,pH 7.8,ambient,30,30
+49,pH 7.8,ambient,30,30
+50,pH 7.8,ambient,30,30
+51,pH 7.8,ambient,30,30
+52,pH 7.8,ambient,30,30
+53,pH 7.8,ambient,30,30
+54,pH 7.8,ambient,30,30
+55,pH 7.8,ambient,30,30
+56,pH 7.8,ambient,30,30
+57,pH 7.8,ambient,30,30
+58,pH 7.8,ambient,30,30
+59,pH 7.8,ambient,30,30
+60,pH 7.8,ambient,30,30
+61,pH 7.8,ambient,28,30
+62,pH 7.8,ambient,28,30
+63,pH 7.8,ambient,28,30
+64,pH 7.8,ambient,27,30
+65,pH 7.8,ambient,27,30
+66,pH 7.8,ambient,27,30
+67,pH 7.8,ambient,27,30
+68,pH 7.8,ambient,25,30
+69,pH 7.8,ambient,25,30
+70,pH 7.8,ambient,25,30
+71,pH 7.8,ambient,24,30
+72,pH 7.8,ambient,22,30
+73,pH 7.8,ambient,22,30
+74,pH 7.8,ambient,22,30
+75,pH 7.8,ambient,20,30
+76,pH 7.8,ambient,20,30
+77,pH 7.8,ambient,20,30
+78,pH 7.8,ambient,20,30
+79,pH 7.8,ambient,18,30
+80,pH 7.8,ambient,18,30
+81,pH 7.8,ambient,17,30
+82,pH 7.8,ambient,17,30
+83,pH 7.8,ambient,17,30
+84,pH 7.8,ambient,15,30
+85,pH 7.8,ambient,15,30
+86,pH 7.8,ambient,15,30
+87,pH 7.8,ambient,15,30
+88,pH 7.8,ambient,15,30
+89,pH 7.8,ambient,15,30
+90,pH 7.8,ambient,15,30
+91,pH 7.8,ambient,15,30
+92,pH 7.8,ambient,14,30
+93,pH 7.8,ambient,14,30
+94,pH 7.8,ambient,12,30
+95,pH 7.8,ambient,12,30
+96,pH 7.8,ambient,12,30
+97,pH 7.8,ambient,12,30
+98,pH 7.8,ambient,12,30
+99,pH 7.8,ambient,12,30
+100,pH 7.8,ambient,12,30
+101,pH 7.8,ambient,12,30
+102,pH 7.8,ambient,12,30
+103,pH 7.8,ambient,12,30
+104,pH 7.8,ambient,12,30
+105,pH 7.8,ambient,12,30
+106,pH 7.8,ambient,12,30
+107,pH 7.8,ambient,12,30
+108,pH 7.8,ambient,12,30
+109,pH 7.8,ambient,12,30
+110,pH 7.8,ambient,12,30
+111,pH 7.8,ambient,11,30
+112,pH 7.8,ambient,11,30
+113,pH 7.8,ambient,11,30
+114,pH 7.8,ambient,11,30
+115,pH 7.8,ambient,11,30
+116,pH 7.8,ambient,11,30
+117,pH 7.8,ambient,11,30
+118,pH 7.8,ambient,11,30
+119,pH 7.8,ambient,11,30
+120,pH 7.8,ambient,11,30
+121,pH 7.8,ambient,10,30
+122,pH 7.8,ambient,10,30
+123,pH 7.8,ambient,10,30
+124,pH 7.8,ambient,10,30
+125,pH 7.8,ambient,10,30
+126,pH 7.8,ambient,10,30
+127,pH 7.8,ambient,10,30
+128,pH 7.8,ambient,10,30
+129,pH 7.8,ambient,10,30
+130,pH 7.8,ambient,10,30
+131,pH 7.8,ambient,10,30
+132,pH 7.8,ambient,10,30
+133,pH 7.8,ambient,10,30
+134,pH 7.8,ambient,10,30
+135,pH 7.8,ambient,10,30
+136,pH 7.8,ambient,10,30
+137,pH 7.8,ambient,10,30
+138,pH 7.8,ambient,10,30
+139,pH 7.8,ambient,10,30
+140,pH 7.8,ambient,10,30
+141,pH 7.8,ambient,10,30
+142,pH 7.8,ambient,10,30
+143,pH 7.8,ambient,10,30
+144,pH 7.8,ambient,10,30
+145,pH 7.8,ambient,10,30
+146,pH 7.8,ambient,10,30
+147,pH 7.8,ambient,10,30
+148,pH 7.8,ambient,10,30
+149,pH 7.8,ambient,10,30
+150,pH 7.8,ambient,10,30
+151,pH 7.8,ambient,10,30
+152,pH 7.8,ambient,10,30
+153,pH 7.8,ambient,10,30
+154,pH 7.8,ambient,10,30
+155,pH 7.8,ambient,10,30
+156,pH 7.8,ambient,9,30
+157,pH 7.8,ambient,9,30
+158,pH 7.8,ambient,9,30
+159,pH 7.8,ambient,9,30
+160,pH 7.8,ambient,9,30
+161,pH 7.8,ambient,9,30
+162,pH 7.8,ambient,9,30
+163,pH 7.8,ambient,9,30
+164,pH 7.8,ambient,9,30
+165,pH 7.8,ambient,9,30
+166,pH 7.8,ambient,9,30
+167,pH 7.8,ambient,9,30
+168,pH 7.8,ambient,8,30
+169,pH 7.8,ambient,8,30
+170,pH 7.8,ambient,8,30
+171,pH 7.8,ambient,8,30
+172,pH 7.8,ambient,8,30
+173,pH 7.8,ambient,8,30
+174,pH 7.8,ambient,8,30
+175,pH 7.8,ambient,8,30
+176,pH 7.8,ambient,8,30
+177,pH 7.8,ambient,8,30
+178,pH 7.8,ambient,8,30
+179,pH 7.8,ambient,8,30
+180,pH 7.8,ambient,8,30
+181,pH 7.8,ambient,8,30
+182,pH 7.8,ambient,8,30
+183,pH 7.8,ambient,8,30
+184,pH 7.8,ambient,8,30
+1,pH 7.8,ambient +2,30,30
+2,pH 7.8,ambient +2,30,30
+3,pH 7.8,ambient +2,30,30
+4,pH 7.8,ambient +2,30,30
+5,pH 7.8,ambient +2,30,30
+6,pH 7.8,ambient +2,30,30
+7,pH 7.8,ambient +2,30,30
+8,pH 7.8,ambient +2,30,30
+9,pH 7.8,ambient +2,30,30
+10,pH 7.8,ambient +2,30,30
+11,pH 7.8,ambient +2,30,30
+12,pH 7.8,ambient +2,30,30
+13,pH 7.8,ambient +2,30,30
+14,pH 7.8,ambient +2,30,30
+15,pH 7.8,ambient +2,30,30
+16,pH 7.8,ambient +2,30,30
+17,pH 7.8,ambient +2,30,30
+18,pH 7.8,ambient +2,30,30
+19,pH 7.8,ambient +2,30,30
+20,pH 7.8,ambient +2,30,30
+21,pH 7.8,ambient +2,30,30
+22,pH 7.8,ambient +2,30,30
+23,pH 7.8,ambient +2,30,30
+24,pH 7.8,ambient +2,30,30
+25,pH 7.8,ambient +2,30,30
+26,pH 7.8,ambient +2,30,30
+27,pH 7.8,ambient +2,30,30
+28,pH 7.8,ambient +2,30,30
+29,pH 7.8,ambient +2,30,30
+30,pH 7.8,ambient +2,30,30
+31,pH 7.8,ambient +2,30,30
+32,pH 7.8,ambient +2,30,30
+33,pH 7.8,ambient +2,30,30
+34,pH 7.8,ambient +2,30,30
+35,pH 7.8,ambient +2,30,30
+36,pH 7.8,ambient +2,30,30
+37,pH 7.8,ambient +2,30,30
+38,pH 7.8,ambient +2,30,30
+39,pH 7.8,ambient +2,30,30
+40,pH 7.8,ambient +2,30,30
+41,pH 7.8,ambient +2,30,30
+42,pH 7.8,ambient +2,30,30
+43,pH 7.8,ambient +2,30,30
+44,pH 7.8,ambient +2,30,30
+45,pH 7.8,ambient +2,30,30
+46,pH 7.8,ambient +2,30,30
+47,pH 7.8,ambient +2,30,30
+48,pH 7.8,ambient +2,30,30
+49,pH 7.8,ambient +2,30,30
+50,pH 7.8,ambient +2,30,30
+51,pH 7.8,ambient +2,30,30
+52,pH 7.8,ambient +2,30,30
+53,pH 7.8,ambient +2,30,30
+54,pH 7.8,ambient +2,30,30
+55,pH 7.8,ambient +2,30,30
+56,pH 7.8,ambient +2,30,30
+57,pH 7.8,ambient +2,30,30
+58,pH 7.8,ambient +2,29,30
+59,pH 7.8,ambient +2,29,30
+60,pH 7.8,ambient +2,28,30
+61,pH 7.8,ambient +2,26,30
+62,pH 7.8,ambient +2,26,30
+63,pH 7.8,ambient +2,26,30
+64,pH 7.8,ambient +2,26,30
+65,pH 7.8,ambient +2,26,30
+66,pH 7.8,ambient +2,25,30
+67,pH 7.8,ambient +2,25,30
+68,pH 7.8,ambient +2,23,30
+69,pH 7.8,ambient +2,23,30
+70,pH 7.8,ambient +2,23,30
+71,pH 7.8,ambient +2,23,30
+72,pH 7.8,ambient +2,23,30
+73,pH 7.8,ambient +2,23,30
+74,pH 7.8,ambient +2,23,30
+75,pH 7.8,ambient +2,23,30
+76,pH 7.8,ambient +2,23,30
+77,pH 7.8,ambient +2,23,30
+78,pH 7.8,ambient +2,22,30
+79,pH 7.8,ambient +2,22,30
+80,pH 7.8,ambient +2,22,30
+81,pH 7.8,ambient +2,21,30
+82,pH 7.8,ambient +2,21,30
+83,pH 7.8,ambient +2,20,30
+84,pH 7.8,ambient +2,20,30
+85,pH 7.8,ambient +2,19,30
+86,pH 7.8,ambient +2,18,30
+87,pH 7.8,ambient +2,18,30
+88,pH 7.8,ambient +2,18,30
+89,pH 7.8,ambient +2,18,30
+90,pH 7.8,ambient +2,18,30
+91,pH 7.8,ambient +2,18,30
+92,pH 7.8,ambient +2,18,30
+93,pH 7.8,ambient +2,18,30
+94,pH 7.8,ambient +2,18,30
+95,pH 7.8,ambient +2,18,30
+96,pH 7.8,ambient +2,18,30
+97,pH 7.8,ambient +2,18,30
+98,pH 7.8,ambient +2,18,30
+99,pH 7.8,ambient +2,18,30
+100,pH 7.8,ambient +2,18,30
+101,pH 7.8,ambient +2,17,30
+102,pH 7.8,ambient +2,17,30
+103,pH 7.8,ambient +2,17,30
+104,pH 7.8,ambient +2,16,30
+105,pH 7.8,ambient +2,16,30
+106,pH 7.8,ambient +2,16,30
+107,pH 7.8,ambient +2,16,30
+108,pH 7.8,ambient +2,16,30
+109,pH 7.8,ambient +2,16,30
+110,pH 7.8,ambient +2,16,30
+111,pH 7.8,ambient +2,16,30
+112,pH 7.8,ambient +2,16,30
+113,pH 7.8,ambient +2,15,30
+114,pH 7.8,ambient +2,15,30
+115,pH 7.8,ambient +2,15,30
+116,pH 7.8,ambient +2,15,30
+117,pH 7.8,ambient +2,15,30
+118,pH 7.8,ambient +2,15,30
+119,pH 7.8,ambient +2,15,30
+120,pH 7.8,ambient +2,15,30
+121,pH 7.8,ambient +2,15,30
+122,pH 7.8,ambient +2,15,30
+123,pH 7.8,ambient +2,15,30
+124,pH 7.8,ambient +2,15,30
+125,pH 7.8,ambient +2,14,30
+126,pH 7.8,ambient +2,14,30
+127,pH 7.8,ambient +2,14,30
+128,pH 7.8,ambient +2,14,30
+129,pH 7.8,ambient +2,14,30
+130,pH 7.8,ambient +2,14,30
+131,pH 7.8,ambient +2,14,30
+132,pH 7.8,ambient +2,14,30
+133,pH 7.8,ambient +2,14,30
+134,pH 7.8,ambient +2,14,30
+135,pH 7.8,ambient +2,14,30
+136,pH 7.8,ambient +2,14,30
+137,pH 7.8,ambient +2,14,30
+138,pH 7.8,ambient +2,14,30
+139,pH 7.8,ambient +2,14,30
+140,pH 7.8,ambient +2,14,30
+141,pH 7.8,ambient +2,13,30
+142,pH 7.8,ambient +2,13,30
+143,pH 7.8,ambient +2,13,30
+144,pH 7.8,ambient +2,13,30
+145,pH 7.8,ambient +2,13,30
+146,pH 7.8,ambient +2,13,30
+147,pH 7.8,ambient +2,13,30
+148,pH 7.8,ambient +2,13,30
+149,pH 7.8,ambient +2,13,30
+150,pH 7.8,ambient +2,13,30
+151,pH 7.8,ambient +2,13,30
+152,pH 7.8,ambient +2,13,30
+153,pH 7.8,ambient +2,13,30
+154,pH 7.8,ambient +2,13,30
+155,pH 7.8,ambient +2,13,30
+156,pH 7.8,ambient +2,13,30
+157,pH 7.8,ambient +2,13,30
+158,pH 7.8,ambient +2,12,30
+159,pH 7.8,ambient +2,12,30
+160,pH 7.8,ambient +2,12,30
+161,pH 7.8,ambient +2,12,30
+162,pH 7.8,ambient +2,12,30
+163,pH 7.8,ambient +2,12,30
+164,pH 7.8,ambient +2,12,30
+165,pH 7.8,ambient +2,12,30
+166,pH 7.8,ambient +2,12,30
+167,pH 7.8,ambient +2,12,30
+168,pH 7.8,ambient +2,12,30
+169,pH 7.8,ambient +2,12,30
+170,pH 7.8,ambient +2,12,30
+171,pH 7.8,ambient +2,12,30
+172,pH 7.8,ambient +2,12,30
+173,pH 7.8,ambient +2,12,30
+174,pH 7.8,ambient +2,12,30
+175,pH 7.8,ambient +2,12,30
+176,pH 7.8,ambient +2,12,30
+177,pH 7.8,ambient +2,12,30
+178,pH 7.8,ambient +2,12,30
+179,pH 7.8,ambient +2,12,30
+180,pH 7.8,ambient +2,12,30
+181,pH 7.8,ambient +2,12,30
+182,pH 7.8,ambient +2,12,30
+183,pH 7.8,ambient +2,12,30
+184,pH 7.8,ambient +2,12,30
+1,pH 7.8,ambient +4,29,29
+2,pH 7.8,ambient +4,29,29
+3,pH 7.8,ambient +4,29,29
+4,pH 7.8,ambient +4,29,29
+5,pH 7.8,ambient +4,29,29
+6,pH 7.8,ambient +4,29,29
+7,pH 7.8,ambient +4,29,29
+8,pH 7.8,ambient +4,29,29
+9,pH 7.8,ambient +4,29,29
+10,pH 7.8,ambient +4,29,29
+11,pH 7.8,ambient +4,29,29
+12,pH 7.8,ambient +4,29,29
+13,pH 7.8,ambient +4,29,29
+14,pH 7.8,ambient +4,29,29
+15,pH 7.8,ambient +4,29,29
+16,pH 7.8,ambient +4,29,29
+17,pH 7.8,ambient +4,29,29
+18,pH 7.8,ambient +4,29,29
+19,pH 7.8,ambient +4,29,29
+20,pH 7.8,ambient +4,29,29
+21,pH 7.8,ambient +4,29,29
+22,pH 7.8,ambient +4,29,29
+23,pH 7.8,ambient +4,29,29
+24,pH 7.8,ambient +4,29,29
+25,pH 7.8,ambient +4,29,29
+26,pH 7.8,ambient +4,29,29
+27,pH 7.8,ambient +4,29,29
+28,pH 7.8,ambient +4,29,29
+29,pH 7.8,ambient +4,29,29
+30,pH 7.8,ambient +4,28,29
+31,pH 7.8,ambient +4,28,29
+32,pH 7.8,ambient +4,28,29
+33,pH 7.8,ambient +4,28,29
+34,pH 7.8,ambient +4,28,29
+35,pH 7.8,ambient +4,28,29
+36,pH 7.8,ambient +4,28,29
+37,pH 7.8,ambient +4,28,29
+38,pH 7.8,ambient +4,28,29
+39,pH 7.8,ambient +4,28,29
+40,pH 7.8,ambient +4,28,29
+41,pH 7.8,ambient +4,28,29
+42,pH 7.8,ambient +4,28,29
+43,pH 7.8,ambient +4,28,29
+44,pH 7.8,ambient +4,28,29
+45,pH 7.8,ambient +4,28,29
+46,pH 7.8,ambient +4,27,29
+47,pH 7.8,ambient +4,27,29
+48,pH 7.8,ambient +4,27,29
+49,pH 7.8,ambient +4,26,29
+50,pH 7.8,ambient +4,25,29
+51,pH 7.8,ambient +4,25,29
+52,pH 7.8,ambient +4,25,29
+53,pH 7.8,ambient +4,25,29
+54,pH 7.8,ambient +4,24,29
+55,pH 7.8,ambient +4,24,29
+56,pH 7.8,ambient +4,24,29
+57,pH 7.8,ambient +4,23,29
+58,pH 7.8,ambient +4,23,29
+59,pH 7.8,ambient +4,22,29
+60,pH 7.8,ambient +4,22,29
+61,pH 7.8,ambient +4,21,29
+62,pH 7.8,ambient +4,20,29
+63,pH 7.8,ambient +4,20,29
+64,pH 7.8,ambient +4,20,29
+65,pH 7.8,ambient +4,20,29
+66,pH 7.8,ambient +4,19,29
+67,pH 7.8,ambient +4,19,29
+68,pH 7.8,ambient +4,19,29
+69,pH 7.8,ambient +4,19,29
+70,pH 7.8,ambient +4,19,29
+71,pH 7.8,ambient +4,19,29
+72,pH 7.8,ambient +4,19,29
+73,pH 7.8,ambient +4,18,29
+74,pH 7.8,ambient +4,18,29
+75,pH 7.8,ambient +4,18,29
+76,pH 7.8,ambient +4,16,29
+77,pH 7.8,ambient +4,16,29
+78,pH 7.8,ambient +4,16,29
+79,pH 7.8,ambient +4,14,29
+80,pH 7.8,ambient +4,13,29
+81,pH 7.8,ambient +4,12,29
+82,pH 7.8,ambient +4,12,29
+83,pH 7.8,ambient +4,11,29
+84,pH 7.8,ambient +4,11,29
+85,pH 7.8,ambient +4,11,29
+86,pH 7.8,ambient +4,11,29
+87,pH 7.8,ambient +4,11,29
+88,pH 7.8,ambient +4,10,29
+89,pH 7.8,ambient +4,10,29
+90,pH 7.8,ambient +4,10,29
+91,pH 7.8,ambient +4,10,29
+92,pH 7.8,ambient +4,9,29
+93,pH 7.8,ambient +4,8,29
+94,pH 7.8,ambient +4,8,29
+95,pH 7.8,ambient +4,8,29
+96,pH 7.8,ambient +4,8,29
+97,pH 7.8,ambient +4,8,29
+98,pH 7.8,ambient +4,8,29
+99,pH 7.8,ambient +4,8,29
+100,pH 7.8,ambient +4,8,29
+101,pH 7.8,ambient +4,8,29
+102,pH 7.8,ambient +4,8,29
+103,pH 7.8,ambient +4,8,29
+104,pH 7.8,ambient +4,7,29
+105,pH 7.8,ambient +4,7,29
+106,pH 7.8,ambient +4,7,29
+107,pH 7.8,ambient +4,6,29
+108,pH 7.8,ambient +4,6,29
+109,pH 7.8,ambient +4,6,29
+110,pH 7.8,ambient +4,5,29
+111,pH 7.8,ambient +4,5,29
+112,pH 7.8,ambient +4,5,29
+113,pH 7.8,ambient +4,5,29
+114,pH 7.8,ambient +4,5,29
+115,pH 7.8,ambient +4,5,29
+116,pH 7.8,ambient +4,5,29
+117,pH 7.8,ambient +4,4,29
+118,pH 7.8,ambient +4,4,29
+119,pH 7.8,ambient +4,4,29
+120,pH 7.8,ambient +4,4,29
+121,pH 7.8,ambient +4,4,29
+122,pH 7.8,ambient +4,4,29
+123,pH 7.8,ambient +4,4,29
+124,pH 7.8,ambient +4,4,29
+125,pH 7.8,ambient +4,4,29
+126,pH 7.8,ambient +4,3,29
+127,pH 7.8,ambient +4,3,29
+128,pH 7.8,ambient +4,3,29
+129,pH 7.8,ambient +4,3,29
+130,pH 7.8,ambient +4,2,29
+131,pH 7.8,ambient +4,2,29
+132,pH 7.8,ambient +4,2,29
+133,pH 7.8,ambient +4,2,29
+134,pH 7.8,ambient +4,2,29
+135,pH 7.8,ambient +4,2,29
+136,pH 7.8,ambient +4,2,29
+137,pH 7.8,ambient +4,2,29
+138,pH 7.8,ambient +4,2,29
+139,pH 7.8,ambient +4,2,29
+140,pH 7.8,ambient +4,2,29
+141,pH 7.8,ambient +4,2,29
+142,pH 7.8,ambient +4,2,29
+143,pH 7.8,ambient +4,1,29
+144,pH 7.8,ambient +4,1,29
+145,pH 7.8,ambient +4,1,29
+146,pH 7.8,ambient +4,1,29
+147,pH 7.8,ambient +4,1,29
+148,pH 7.8,ambient +4,1,29
+149,pH 7.8,ambient +4,1,29
+150,pH 7.8,ambient +4,1,29
+151,pH 7.8,ambient +4,1,29
+152,pH 7.8,ambient +4,1,29
+153,pH 7.8,ambient +4,1,29
+154,pH 7.8,ambient +4,1,29
+155,pH 7.8,ambient +4,1,29
+156,pH 7.8,ambient +4,1,29
+157,pH 7.8,ambient +4,1,29
+158,pH 7.8,ambient +4,1,29
+159,pH 7.8,ambient +4,1,29
+160,pH 7.8,ambient +4,1,29
+161,pH 7.8,ambient +4,1,29
+162,pH 7.8,ambient +4,1,29
+163,pH 7.8,ambient +4,1,29
+164,pH 7.8,ambient +4,1,29
+165,pH 7.8,ambient +4,1,29
+166,pH 7.8,ambient +4,1,29
+167,pH 7.8,ambient +4,1,29
+168,pH 7.8,ambient +4,1,29
+169,pH 7.8,ambient +4,1,29
+170,pH 7.8,ambient +4,1,29
+171,pH 7.8,ambient +4,1,29
+172,pH 7.8,ambient +4,1,29
+173,pH 7.8,ambient +4,1,29
+174,pH 7.8,ambient +4,1,29
+175,pH 7.8,ambient +4,1,29
+176,pH 7.8,ambient +4,1,29
+177,pH 7.8,ambient +4,1,29
+178,pH 7.8,ambient +4,1,29
+179,pH 7.8,ambient +4,1,29
+180,pH 7.8,ambient +4,1,29
+181,pH 7.8,ambient +4,1,29
+182,pH 7.8,ambient +4,1,29
+183,pH 7.8,ambient +4,1,29
+184,pH 7.8,ambient +4,1,29
